@@ -1,0 +1,52 @@
+metasploit-framework 6.4.147-20260729060556-1rapid7 license: "Unspecified"
+
+
+
+
+
+This product bundles bundler 2.6.7,
+which is available under a "MIT" License.
+For details, see:
+C:/metasploit-framework/LICENSES/bundler-LICENSE.md
+
+This product bundles cacerts 2021-10-26,
+which is available under a "MPL-2.0" License.
+For details, see:
+C:/metasploit-framework/LICENSES/cacerts-index.815ca599c9df.txt
+
+This product bundles metasploit-framework master,
+which is available under a "Unspecified" License.
+
+This product bundles metasploit-framework-wrappers-windows 1.0.0,
+which is available under a "Unspecified" License.
+
+This product bundles pcaprub 0.13.3,
+which is available under a "Unspecified" License.
+
+This product bundles postgresql-windows 16.14,
+which is available under a "Unspecified" License.
+
+This product bundles ruby-windows 3.4.9-1,
+which is available under a "Unspecified" License.
+
+This product bundles ruby-windows-devkit ,
+which is available under a "BSD-3-Clause" License.
+For details, see:
+C:/metasploit-framework/LICENSES/ruby-windows-devkit-LICENSE.txt
+
+This product bundles ruby-windows-msys2 20250221,
+which is available under a "BSD-3-Clause" License.
+For details, see:
+C:/metasploit-framework/LICENSES/ruby-windows-msys2-LICENSE
+
+This product bundles rubygems 3.6.7,
+which is available under a "MIT" License.
+For details, see:
+C:/metasploit-framework/LICENSES/rubygems-LICENSE.txt
+
+This product bundles winpcap-devpack 4.1.2,
+which is available under a "Unspecified" License.
+
+
+
+

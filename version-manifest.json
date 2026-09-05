@@ -1,0 +1,105 @@
+{
+  "manifest_format": 2,
+  "software": {
+    "cacerts": {
+      "locked_version": "2021-10-26",
+      "locked_source": {
+        "url": "https://curl.se/ca/cacert-2021-10-26.pem",
+        "sha256": "ae31ecb3c6e9ff3154cb7a55f017090448f88482f0e94ac927c0c67a1f33b9cf"
+      },
+      "source_type": "url",
+      "described_version": "2021-10-26",
+      "license": "MPL-2.0"
+    },
+    "ruby-windows": {
+      "locked_version": "3.4.9-1",
+      "locked_source": {
+        "sha256": "4375268618b61dadf53bf8e54beaca74ea30580c90d3c47ea9f2a134bd3e494e",
+        "url": "https://github.com/oneclick/rubyinstaller2/releases/download/rubyinstaller-3.4.9-1/rubyinstaller-3.4.9-1-x64.7z"
+      },
+      "source_type": "url",
+      "described_version": "3.4.9-1",
+      "license": "Unspecified"
+    },
+    "ruby-windows-msys2": {
+      "locked_version": "20250221",
+      "locked_source": {
+        "url": "https://repo.msys2.org/distrib/x86_64/msys2-base-x86_64-20250221.tar",
+        "sha256": "cf7bd3ecb4f79eaa58ac794dba3cca15581465b9d92cec59ae4bd99fde74c8a0"
+      },
+      "source_type": "url",
+      "described_version": "20250221",
+      "license": "BSD-3-Clause"
+    },
+    "ruby-windows-devkit": {
+      "locked_version": null,
+      "locked_source": null,
+      "source_type": "project_local",
+      "described_version": null,
+      "license": "BSD-3-Clause"
+    },
+    "rubygems": {
+      "locked_version": "3.6.7",
+      "locked_source": {
+        "md5": "4e8c5641f8dc7b6cac5a4bb8d423174f",
+        "url": "http://production.cf.rubygems.org/rubygems/rubygems-3.6.7.tgz"
+      },
+      "source_type": "url",
+      "described_version": "3.6.7",
+      "license": "MIT"
+    },
+    "bundler": {
+      "locked_version": "2.6.7",
+      "locked_source": null,
+      "source_type": "project_local",
+      "described_version": "2.6.7",
+      "license": "MIT"
+    },
+    "winpcap-devpack": {
+      "locked_version": "4.1.2",
+      "locked_source": {
+        "md5": "bae2236af062b0900ad1416b2c4878b9",
+        "url": "https://www.winpcap.org/install/bin/WpdPack_4_1_2.zip"
+      },
+      "source_type": "url",
+      "described_version": "4.1.2",
+      "license": "Unspecified"
+    },
+    "pcaprub": {
+      "locked_version": "0.13.3",
+      "locked_source": null,
+      "source_type": "project_local",
+      "described_version": "0.13.3",
+      "license": "Unspecified"
+    },
+    "postgresql-windows": {
+      "locked_version": "16.14",
+      "locked_source": {
+        "sha256": "f68c7fbd93029e60a4145ccb64337a32ddf02317a8194cb1f76e11557602642c",
+        "url": "http://get.enterprisedb.com/postgresql/postgresql-16.14-1-windows-x64-binaries.zip"
+      },
+      "source_type": "url",
+      "described_version": "16.14",
+      "license": "Unspecified"
+    },
+    "metasploit-framework": {
+      "locked_version": "933d62c0c3fc0f0082a7cd8ac993603e07ec9b00",
+      "locked_source": {
+        "git": "https://github.com/rapid7/metasploit-framework.git"
+      },
+      "source_type": "git",
+      "described_version": "master",
+      "license": "Unspecified"
+    },
+    "metasploit-framework-wrappers-windows": {
+      "locked_version": "1.0.0",
+      "locked_source": null,
+      "source_type": "project_local",
+      "described_version": "1.0.0",
+      "license": "Unspecified"
+    }
+  },
+  "build_version": "6.4.147-20260729060556-1rapid7",
+  "build_git_revision": "21d459344aa291e9d8c0abdd6cbd9806fdb84791",
+  "license": "Unspecified"
+}

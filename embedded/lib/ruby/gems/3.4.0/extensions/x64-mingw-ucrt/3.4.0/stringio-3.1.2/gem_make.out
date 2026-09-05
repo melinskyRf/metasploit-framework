@@ -1,0 +1,19 @@
+current directory: C:/metasploit-framework/embedded/lib/ruby/gems/3.4.0/gems/stringio-3.1.2/ext/stringio
+C:/metasploit-framework/embedded/bin/ruby.exe extconf.rb
+creating Makefile
+
+current directory: C:/metasploit-framework/embedded/lib/ruby/gems/3.4.0/gems/stringio-3.1.2/ext/stringio
+make -j4 DESTDIR\= sitearchdir\=./.gem.20260729-3492-hjqeal sitelibdir\=./.gem.20260729-3492-hjqeal clean
+
+current directory: C:/metasploit-framework/embedded/lib/ruby/gems/3.4.0/gems/stringio-3.1.2/ext/stringio
+make -j4 DESTDIR\= sitearchdir\=./.gem.20260729-3492-hjqeal sitelibdir\=./.gem.20260729-3492-hjqeal
+generating stringio-x64-mingw-ucrt.def
+compiling stringio.c
+linking shared-object stringio.so
+
+current directory: C:/metasploit-framework/embedded/lib/ruby/gems/3.4.0/gems/stringio-3.1.2/ext/stringio
+make -j4 DESTDIR\= sitearchdir\=./.gem.20260729-3492-hjqeal sitelibdir\=./.gem.20260729-3492-hjqeal install
+/usr/bin/install -c -m 0755 stringio.so ./.gem.20260729-3492-hjqeal
+
+current directory: C:/metasploit-framework/embedded/lib/ruby/gems/3.4.0/gems/stringio-3.1.2/ext/stringio
+make -j4 DESTDIR\= sitearchdir\=./.gem.20260729-3492-hjqeal sitelibdir\=./.gem.20260729-3492-hjqeal clean

@@ -1,0 +1,23 @@
+current directory: C:/metasploit-framework/embedded/lib/ruby/gems/3.4.0/gems/bootsnap-1.24.6/ext/bootsnap
+C:/metasploit-framework/embedded/bin/ruby.exe extconf.rb
+checking for fdatasync() in unistd.h... no
+checking for fstatat() in sys/stat.h... no
+checking for whether -O3 is accepted as CFLAGS... yes
+checking for whether -std=c99 is accepted as CFLAGS... yes
+creating Makefile
+
+current directory: C:/metasploit-framework/embedded/lib/ruby/gems/3.4.0/gems/bootsnap-1.24.6/ext/bootsnap
+make -j4 DESTDIR\= sitearchdir\=./.gem.20260729-3492-nn6sdi sitelibdir\=./.gem.20260729-3492-nn6sdi clean
+
+current directory: C:/metasploit-framework/embedded/lib/ruby/gems/3.4.0/gems/bootsnap-1.24.6/ext/bootsnap
+make -j4 DESTDIR\= sitearchdir\=./.gem.20260729-3492-nn6sdi sitelibdir\=./.gem.20260729-3492-nn6sdi
+generating bootsnap-x64-mingw-ucrt.def
+compiling bootsnap.c
+linking shared-object bootsnap/bootsnap.so
+
+current directory: C:/metasploit-framework/embedded/lib/ruby/gems/3.4.0/gems/bootsnap-1.24.6/ext/bootsnap
+make -j4 DESTDIR\= sitearchdir\=./.gem.20260729-3492-nn6sdi sitelibdir\=./.gem.20260729-3492-nn6sdi install
+/usr/bin/install -c -m 0755 bootsnap.so ./.gem.20260729-3492-nn6sdi/bootsnap
+
+current directory: C:/metasploit-framework/embedded/lib/ruby/gems/3.4.0/gems/bootsnap-1.24.6/ext/bootsnap
+make -j4 DESTDIR\= sitearchdir\=./.gem.20260729-3492-nn6sdi sitelibdir\=./.gem.20260729-3492-nn6sdi clean

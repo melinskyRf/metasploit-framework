@@ -1,0 +1,64 @@
+append_cflags: checking for whether -Wall is accepted as CFLAGS... -------------------- yes
+
+PATH=".;C:/metasploit-framework/embedded/lib;C:\metasploit-framework\embedded\bin;C:\metasploit-framework\embedded\msys64\ucrt64\bin;C:\metasploit-framework\embedded\msys64\usr\bin;C:/metasploit-framework/bin;C:/metasploit-framework/embedded/bin;C:/tools/ruby30/lib/ruby/gems/3.0.0/bin;C:\Program Files (x86)\WiX Toolset v3.14\bin;C:\Program Files\Git\usr\bin;C:\Program Files\OpenSSH\bin;C:\tools\ruby30\bin;C:\ProgramData\Oracle\Java\javapath;C:\ProgramData\Boxstarter;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;C:\Program Files\Amazon\cfn-bootstrap;C:\ProgramData\chocolatey\bin;C:\Program Files\Git\cmd;C:\Program Files\Microsoft SQL Server\110\Tools\Binn;C:\Program Files (x86)\Microsoft SDKs\TypeScript\1.0;C:\Program Files\Microsoft SQL Server\120\Tools\Binn;C:\tools\python;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;C:\PROGRA~2\WIXTOO~1.11\bin;C:\PROGRA~2\WI3CF2~1\8.1\bin\x64;C:\tools\msys64\usr\bin;C:\Users\sshd_server\AppData\Local\Microsoft\WindowsApps" ASAN_OPTIONS=detect_leaks=0 "gcc -o conftest.exe -IC:/metasploit-framework/embedded/include/ruby-3.4.0/x64-mingw-ucrt -IC:/metasploit-framework/embedded/include/ruby-3.4.0/ruby/backward -IC:/metasploit-framework/embedded/include/ruby-3.4.0 -I. -D_WIN32_WINNT=0x0600 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -O3 -fstack-protector-strong conftest.c -L. -LC:/metasploit-framework/embedded/lib -L. -pipe -s -fstack-protector-strong -lpthread -Wl,--no-as-needed     -lx64-ucrt-ruby340  -lshell32 -lws2_32 -liphlpapi -limagehlp -lshlwapi -lbcrypt  "
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <winsock2.h>
+4: #include <windows.h>
+5: int main(int argc, char **argv)
+6: {
+7:   return !!argv[argc];
+8: }
+/* end */
+
+PATH=".;C:/metasploit-framework/embedded/lib;C:\metasploit-framework\embedded\bin;C:\metasploit-framework\embedded\msys64\ucrt64\bin;C:\metasploit-framework\embedded\msys64\usr\bin;C:/metasploit-framework/bin;C:/metasploit-framework/embedded/bin;C:/tools/ruby30/lib/ruby/gems/3.0.0/bin;C:\Program Files (x86)\WiX Toolset v3.14\bin;C:\Program Files\Git\usr\bin;C:\Program Files\OpenSSH\bin;C:\tools\ruby30\bin;C:\ProgramData\Oracle\Java\javapath;C:\ProgramData\Boxstarter;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;C:\Program Files\Amazon\cfn-bootstrap;C:\ProgramData\chocolatey\bin;C:\Program Files\Git\cmd;C:\Program Files\Microsoft SQL Server\110\Tools\Binn;C:\Program Files (x86)\Microsoft SDKs\TypeScript\1.0;C:\Program Files\Microsoft SQL Server\120\Tools\Binn;C:\tools\python;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;C:\PROGRA~2\WIXTOO~1.11\bin;C:\PROGRA~2\WI3CF2~1\8.1\bin\x64;C:\tools\msys64\usr\bin;C:\Users\sshd_server\AppData\Local\Microsoft\WindowsApps" ASAN_OPTIONS=detect_leaks=0 "gcc -IC:/metasploit-framework/embedded/include/ruby-3.4.0/x64-mingw-ucrt -IC:/metasploit-framework/embedded/include/ruby-3.4.0/ruby/backward -IC:/metasploit-framework/embedded/include/ruby-3.4.0 -I. -D_WIN32_WINNT=0x0600 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -O3 -fstack-protector-strong  -Wall -Werror -c conftest.c"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <winsock2.h>
+4: #include <windows.h>
+5: int main(int argc, char **argv)
+6: {
+7:   return !!argv[argc];
+8: }
+/* end */
+
+--------------------
+
+append_cflags: checking for whether -g is accepted as CFLAGS... -------------------- yes
+
+PATH=".;C:/metasploit-framework/embedded/lib;C:\metasploit-framework\embedded\bin;C:\metasploit-framework\embedded\msys64\ucrt64\bin;C:\metasploit-framework\embedded\msys64\usr\bin;C:/metasploit-framework/bin;C:/metasploit-framework/embedded/bin;C:/tools/ruby30/lib/ruby/gems/3.0.0/bin;C:\Program Files (x86)\WiX Toolset v3.14\bin;C:\Program Files\Git\usr\bin;C:\Program Files\OpenSSH\bin;C:\tools\ruby30\bin;C:\ProgramData\Oracle\Java\javapath;C:\ProgramData\Boxstarter;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;C:\Program Files\Amazon\cfn-bootstrap;C:\ProgramData\chocolatey\bin;C:\Program Files\Git\cmd;C:\Program Files\Microsoft SQL Server\110\Tools\Binn;C:\Program Files (x86)\Microsoft SDKs\TypeScript\1.0;C:\Program Files\Microsoft SQL Server\120\Tools\Binn;C:\tools\python;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;C:\PROGRA~2\WIXTOO~1.11\bin;C:\PROGRA~2\WI3CF2~1\8.1\bin\x64;C:\tools\msys64\usr\bin;C:\Users\sshd_server\AppData\Local\Microsoft\WindowsApps" ASAN_OPTIONS=detect_leaks=0 "gcc -IC:/metasploit-framework/embedded/include/ruby-3.4.0/x64-mingw-ucrt -IC:/metasploit-framework/embedded/include/ruby-3.4.0/ruby/backward -IC:/metasploit-framework/embedded/include/ruby-3.4.0 -I. -D_WIN32_WINNT=0x0600 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -O3 -fstack-protector-strong -Wall  -g -Werror -c conftest.c"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <winsock2.h>
+4: #include <windows.h>
+5: int main(int argc, char **argv)
+6: {
+7:   return !!argv[argc];
+8: }
+/* end */
+
+--------------------
+
+append_cflags: checking for whether -std=c99 is accepted as CFLAGS... -------------------- yes
+
+PATH=".;C:/metasploit-framework/embedded/lib;C:\metasploit-framework\embedded\bin;C:\metasploit-framework\embedded\msys64\ucrt64\bin;C:\metasploit-framework\embedded\msys64\usr\bin;C:/metasploit-framework/bin;C:/metasploit-framework/embedded/bin;C:/tools/ruby30/lib/ruby/gems/3.0.0/bin;C:\Program Files (x86)\WiX Toolset v3.14\bin;C:\Program Files\Git\usr\bin;C:\Program Files\OpenSSH\bin;C:\tools\ruby30\bin;C:\ProgramData\Oracle\Java\javapath;C:\ProgramData\Boxstarter;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;C:\Program Files\Amazon\cfn-bootstrap;C:\ProgramData\chocolatey\bin;C:\Program Files\Git\cmd;C:\Program Files\Microsoft SQL Server\110\Tools\Binn;C:\Program Files (x86)\Microsoft SDKs\TypeScript\1.0;C:\Program Files\Microsoft SQL Server\120\Tools\Binn;C:\tools\python;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;C:\PROGRA~2\WIXTOO~1.11\bin;C:\PROGRA~2\WI3CF2~1\8.1\bin\x64;C:\tools\msys64\usr\bin;C:\Users\sshd_server\AppData\Local\Microsoft\WindowsApps" ASAN_OPTIONS=detect_leaks=0 "gcc -IC:/metasploit-framework/embedded/include/ruby-3.4.0/x64-mingw-ucrt -IC:/metasploit-framework/embedded/include/ruby-3.4.0/ruby/backward -IC:/metasploit-framework/embedded/include/ruby-3.4.0 -I. -D_WIN32_WINNT=0x0600 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -O3 -fstack-protector-strong -Wall -g  -std=c99 -Werror -c conftest.c"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <winsock2.h>
+4: #include <windows.h>
+5: int main(int argc, char **argv)
+6: {
+7:   return !!argv[argc];
+8: }
+/* end */
+
+--------------------
+

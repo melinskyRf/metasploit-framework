@@ -1,0 +1,147 @@
+Invoked as: ./configure --host=x86_64-w64-mingw32 --enable-static --disable-shared --disable-shared --enable-static --enable-fts5 CC=gcc "CFLAGS=-IC:/metasploit-framework/embedded/include -m64 -O3 -march=x86-64 -fPIC -O2 -fvisibility=hidden -DSQLITE_DEFAULT_WAL_SYNCHRONOUS=1 -DSQLITE_USE_URI=1 -DSQLITE_ENABLE_DBPAGE_VTAB=1 -DSQLITE_ENABLE_DBSTAT_VTAB=1" "CPPFLAGS=-IC:/metasploit-framework/embedded/include -m64 -O3 -march=x86-64" "LDFLAGS=-LC:/metasploit-framework/embedded/lib -m64 -fno-lto" --prefix=C:/metasploit-framework/embedded/lib/ruby/gems/3.4.0/gems/sqlite3-2.9.5/ports/x86_64-w64-mingw32/sqlite3/3.53.2
+Tclsh: C:/metasploit-framework/embedded/lib/ruby/gems/3.4.0/gems/sqlite3-2.9.5/ext/sqlite3/tmp/x86_64-w64-mingw32/ports/sqlite3/3.53.2/sqlite-autoconf-3530200/jimsh0.exe
+Failed: gcc -c -D_FILE_OFFSET_BITS=64 -IC:/metasploit-framework/embedded/include -m64 -O3 -march=x86-64 -fPIC -O2 -fvisibility=hidden -DSQLITE_DEFAULT_WAL_SYNCHRONOUS=1 -DSQLITE_USE_URI=1 -IC:/metasploit-framework/embedded/include -m64 -O3 -march=x86-64 conftest__.c -o conftest__.o
+conftest__.c: In function 'main':
+conftest__.c:3:12: error: size of array '_x' is negative
+    3 | static int _x[sizeof(off_t) == 4 ? 1 : -1] = { 1 };
+      |            ^~
+============
+The failed code was:
+#include <sys/types.h>
+int main(void) {
+static int _x[sizeof(off_t) == 4 ? 1 : -1] = { 1 };
+return 0;
+}
+============
+Failed: gcc -LC:/metasploit-framework/embedded/lib -m64 -fno-lto -IC:/metasploit-framework/embedded/include -m64 -O3 -march=x86-64 -fPIC -O2 -fvisibility=hidden -DSQLITE_DEFAULT_WAL_SYNCHRONOUS=1 -DSQLITE_USE_URI=1 conftest__.c -o conftest__
+C:/metasploit-framework/embedded/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: C:\metasploit-framework\embedded\msys64\tmp\ccVq87dl.o:conftest__.c:(.text.startup+0xa): undefined reference to `gmtime_r'
+collect2.exe: error: ld returned 1 exit status
+============
+The failed code was:
+extern void gmtime_r(void);
+int main(void) {
+gmtime_r();
+return 0;
+}
+============
+Failed: gcc -LC:/metasploit-framework/embedded/lib -m64 -fno-lto -IC:/metasploit-framework/embedded/include -m64 -O3 -march=x86-64 -fPIC -O2 -fvisibility=hidden -DSQLITE_DEFAULT_WAL_SYNCHRONOUS=1 -DSQLITE_USE_URI=1 conftest__.c -o conftest__
+C:/metasploit-framework/embedded/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: C:\metasploit-framework\embedded\msys64\tmp\ccgtC3N5.o:conftest__.c:(.text.startup+0xa): undefined reference to `localtime_r'
+collect2.exe: error: ld returned 1 exit status
+============
+The failed code was:
+extern void localtime_r(void);
+int main(void) {
+localtime_r();
+return 0;
+}
+============
+Failed: gcc -LC:/metasploit-framework/embedded/lib -m64 -fno-lto -IC:/metasploit-framework/embedded/include -m64 -O3 -march=x86-64 -fPIC -O2 -fvisibility=hidden -DSQLITE_DEFAULT_WAL_SYNCHRONOUS=1 -DSQLITE_USE_URI=1 conftest__.c -o conftest__
+C:/metasploit-framework/embedded/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: C:\metasploit-framework\embedded\msys64\tmp\cco4j2yZ.o:conftest__.c:(.text.startup+0xa): undefined reference to `localtime_s'
+collect2.exe: error: ld returned 1 exit status
+============
+The failed code was:
+extern void localtime_s(void);
+int main(void) {
+localtime_s();
+return 0;
+}
+============
+Failed: gcc -LC:/metasploit-framework/embedded/lib -m64 -fno-lto -IC:/metasploit-framework/embedded/include -m64 -O3 -march=x86-64 -fPIC -O2 -fvisibility=hidden -DSQLITE_DEFAULT_WAL_SYNCHRONOUS=1 -DSQLITE_USE_URI=1 conftest__.c -o conftest__
+C:/metasploit-framework/embedded/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: C:\metasploit-framework\embedded\msys64\tmp\ccNJl3Hc.o:conftest__.c:(.text.startup+0xa): undefined reference to `pread'
+collect2.exe: error: ld returned 1 exit status
+============
+The failed code was:
+extern void pread(void);
+int main(void) {
+pread();
+return 0;
+}
+============
+Failed: gcc -LC:/metasploit-framework/embedded/lib -m64 -fno-lto -IC:/metasploit-framework/embedded/include -m64 -O3 -march=x86-64 -fPIC -O2 -fvisibility=hidden -DSQLITE_DEFAULT_WAL_SYNCHRONOUS=1 -DSQLITE_USE_URI=1 conftest__.c -o conftest__
+C:/metasploit-framework/embedded/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: C:\metasploit-framework\embedded\msys64\tmp\ccHiWjV7.o:conftest__.c:(.text.startup+0xa): undefined reference to `pread64'
+collect2.exe: error: ld returned 1 exit status
+============
+The failed code was:
+extern void pread64(void);
+int main(void) {
+pread64();
+return 0;
+}
+============
+Failed: gcc -LC:/metasploit-framework/embedded/lib -m64 -fno-lto -IC:/metasploit-framework/embedded/include -m64 -O3 -march=x86-64 -fPIC -O2 -fvisibility=hidden -DSQLITE_DEFAULT_WAL_SYNCHRONOUS=1 -DSQLITE_USE_URI=1 conftest__.c -o conftest__
+C:/metasploit-framework/embedded/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: C:\metasploit-framework\embedded\msys64\tmp\cczfDZYw.o:conftest__.c:(.text.startup+0xa): undefined reference to `pwrite'
+collect2.exe: error: ld returned 1 exit status
+============
+The failed code was:
+extern void pwrite(void);
+int main(void) {
+pwrite();
+return 0;
+}
+============
+Failed: gcc -LC:/metasploit-framework/embedded/lib -m64 -fno-lto -IC:/metasploit-framework/embedded/include -m64 -O3 -march=x86-64 -fPIC -O2 -fvisibility=hidden -DSQLITE_DEFAULT_WAL_SYNCHRONOUS=1 -DSQLITE_USE_URI=1 conftest__.c -o conftest__
+C:/metasploit-framework/embedded/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: C:\metasploit-framework\embedded\msys64\tmp\ccLjlzxK.o:conftest__.c:(.text.startup+0xa): undefined reference to `pwrite64'
+collect2.exe: error: ld returned 1 exit status
+============
+The failed code was:
+extern void pwrite64(void);
+int main(void) {
+pwrite64();
+return 0;
+}
+============
+Failed: gcc -LC:/metasploit-framework/embedded/lib -m64 -fno-lto -IC:/metasploit-framework/embedded/include -m64 -O3 -march=x86-64 -fPIC -O2 -fvisibility=hidden -DSQLITE_DEFAULT_WAL_SYNCHRONOUS=1 -DSQLITE_USE_URI=1 conftest__.c -o conftest__
+C:/metasploit-framework/embedded/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: C:\metasploit-framework\embedded\msys64\tmp\ccwwsR8I.o:conftest__.c:(.text.startup+0xa): undefined reference to `fdatasync'
+collect2.exe: error: ld returned 1 exit status
+============
+The failed code was:
+extern void fdatasync(void);
+int main(void) {
+fdatasync();
+return 0;
+}
+============
+Failed: gcc -LC:/metasploit-framework/embedded/lib -m64 -fno-lto -IC:/metasploit-framework/embedded/include -m64 -O3 -march=x86-64 -fPIC -O2 -fvisibility=hidden -DSQLITE_DEFAULT_WAL_SYNCHRONOUS=1 -DSQLITE_USE_URI=1 conftest__.c -o conftest__ -lrt
+C:/metasploit-framework/embedded/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot find -lrt: No such file or directory
+collect2.exe: error: ld returned 1 exit status
+============
+The failed code was:
+extern void fdatasync(void);
+int main(void) {
+fdatasync();
+return 0;
+}
+============
+Failed: gcc -c -IC:/metasploit-framework/embedded/include -m64 -O3 -march=x86-64 -fPIC -O2 -fvisibility=hidden -DSQLITE_DEFAULT_WAL_SYNCHRONOUS=1 -DSQLITE_USE_URI=1 -IC:/metasploit-framework/embedded/include -m64 -O3 -march=x86-64 conftest__.c -o conftest__.o
+conftest__.c:1:10: fatal error: dlfcn.h: No such file or directory
+    1 | #include <dlfcn.h>
+      |          ^~~~~~~~~
+compilation terminated.
+============
+The failed code was:
+#include <dlfcn.h>
+int main(void) {
+
+return 0;
+}
+============
+Failed: gcc -LC:/metasploit-framework/embedded/lib -m64 -fno-lto -IC:/metasploit-framework/embedded/include -m64 -O3 -march=x86-64 -fPIC -O2 -fvisibility=hidden -DSQLITE_DEFAULT_WAL_SYNCHRONOUS=1 -DSQLITE_USE_URI=1 conftest__.c -o conftest__
+C:/metasploit-framework/embedded/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: C:\metasploit-framework\embedded\msys64\tmp\cc8cWQq3.o:conftest__.c:(.text.startup+0xa): undefined reference to `deflate'
+collect2.exe: error: ld returned 1 exit status
+============
+The failed code was:
+extern void deflate(void);
+int main(void) {
+deflate();
+return 0;
+}
+============
+Failed: gcc -LC:/metasploit-framework/embedded/lib -m64 -fno-lto -rpath C:/metasploit-framework/embedded/lib/ruby/gems/3.4.0/gems/sqlite3-2.9.5/ports/x86_64-w64-mingw32/sqlite3/3.53.2/lib -IC:/metasploit-framework/embedded/include -m64 -O3 -march=x86-64 -fPIC -O2 -fvisibility=hidden -DSQLITE_DEFAULT_WAL_SYNCHRONOUS=1 -DSQLITE_USE_URI=1 conftest__.c -o conftest__
+gcc.exe: error: unrecognized command-line option '-rpath'
+============
+The failed code was:
+int main(void) {
+
+return 0;
+}
+============

@@ -1,0 +1,20 @@
+current directory: C:/metasploit-framework/embedded/lib/ruby/gems/3.4.0/gems/http_parser.rb-0.8.1/ext/ruby_http_parser
+C:/metasploit-framework/embedded/bin/ruby.exe extconf.rb
+creating Makefile
+
+current directory: C:/metasploit-framework/embedded/lib/ruby/gems/3.4.0/gems/http_parser.rb-0.8.1/ext/ruby_http_parser
+make -j4 DESTDIR\= sitearchdir\=./.gem.20260729-3492-6gq8p4 sitelibdir\=./.gem.20260729-3492-6gq8p4 clean
+
+current directory: C:/metasploit-framework/embedded/lib/ruby/gems/3.4.0/gems/http_parser.rb-0.8.1/ext/ruby_http_parser
+make -j4 DESTDIR\= sitearchdir\=./.gem.20260729-3492-6gq8p4 sitelibdir\=./.gem.20260729-3492-6gq8p4
+generating ruby_http_parser-x64-mingw-ucrt.def
+compiling ruby_http_parser.c
+compiling ryah_http_parser.c
+linking shared-object ruby_http_parser.so
+
+current directory: C:/metasploit-framework/embedded/lib/ruby/gems/3.4.0/gems/http_parser.rb-0.8.1/ext/ruby_http_parser
+make -j4 DESTDIR\= sitearchdir\=./.gem.20260729-3492-6gq8p4 sitelibdir\=./.gem.20260729-3492-6gq8p4 install
+/usr/bin/install -c -m 0755 ruby_http_parser.so ./.gem.20260729-3492-6gq8p4
+
+current directory: C:/metasploit-framework/embedded/lib/ruby/gems/3.4.0/gems/http_parser.rb-0.8.1/ext/ruby_http_parser
+make -j4 DESTDIR\= sitearchdir\=./.gem.20260729-3492-6gq8p4 sitelibdir\=./.gem.20260729-3492-6gq8p4 clean

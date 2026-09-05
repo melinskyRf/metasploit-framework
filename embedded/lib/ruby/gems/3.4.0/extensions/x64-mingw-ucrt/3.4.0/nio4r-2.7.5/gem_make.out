@@ -1,0 +1,18 @@
+current directory: C:/metasploit-framework/embedded/lib/ruby/gems/3.4.0/gems/nio4r-2.7.5/ext/nio4r
+C:/metasploit-framework/embedded/bin/ruby.exe extconf.rb
+
+current directory: C:/metasploit-framework/embedded/lib/ruby/gems/3.4.0/gems/nio4r-2.7.5/ext/nio4r
+make -j4 DESTDIR\= sitearchdir\=./.gem.20260729-3492-dh5aiq sitelibdir\=./.gem.20260729-3492-dh5aiq clean
+make: *** No rule to make target 'clean'.  Stop.
+
+current directory: C:/metasploit-framework/embedded/lib/ruby/gems/3.4.0/gems/nio4r-2.7.5/ext/nio4r
+make -j4 DESTDIR\= sitearchdir\=./.gem.20260729-3492-dh5aiq sitelibdir\=./.gem.20260729-3492-dh5aiq
+make: Nothing to be done for 'all'.
+
+current directory: C:/metasploit-framework/embedded/lib/ruby/gems/3.4.0/gems/nio4r-2.7.5/ext/nio4r
+make -j4 DESTDIR\= sitearchdir\=./.gem.20260729-3492-dh5aiq sitelibdir\=./.gem.20260729-3492-dh5aiq install
+make: Nothing to be done for 'install'.
+
+current directory: C:/metasploit-framework/embedded/lib/ruby/gems/3.4.0/gems/nio4r-2.7.5/ext/nio4r
+make -j4 DESTDIR\= sitearchdir\=./.gem.20260729-3492-dh5aiq sitelibdir\=./.gem.20260729-3492-dh5aiq clean
+make: *** No rule to make target 'clean'.  Stop.

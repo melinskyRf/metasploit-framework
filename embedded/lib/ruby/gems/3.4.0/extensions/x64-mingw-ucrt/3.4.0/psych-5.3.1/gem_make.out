@@ -1,0 +1,30 @@
+current directory: C:/metasploit-framework/embedded/lib/ruby/gems/3.4.0/gems/psych-5.3.1/ext/psych
+C:/metasploit-framework/embedded/bin/ruby.exe extconf.rb
+checking for pkg-config for yaml-0.1... ["-IC:/metasploit-framework/embedded/msys64/ucrt64/bin/../include ", "-LC:/metasploit-framework/embedded/msys64/ucrt64/bin/../lib", "-lyaml"]
+creating Makefile
+
+current directory: C:/metasploit-framework/embedded/lib/ruby/gems/3.4.0/gems/psych-5.3.1/ext/psych
+make -j4 DESTDIR\= sitearchdir\=./.gem.20260729-3492-g0l9go sitelibdir\=./.gem.20260729-3492-g0l9go clean
+cd libyaml && make -j4 clean
+/bin/sh: line 1: cd: libyaml: No such file or directory
+make: [Makefile:291: clean-so] Error 1 (ignored)
+
+current directory: C:/metasploit-framework/embedded/lib/ruby/gems/3.4.0/gems/psych-5.3.1/ext/psych
+make -j4 DESTDIR\= sitearchdir\=./.gem.20260729-3492-g0l9go sitelibdir\=./.gem.20260729-3492-g0l9go
+generating psych-x64-mingw-ucrt.def
+compiling psych.c
+compiling psych_emitter.c
+compiling psych_parser.c
+compiling psych_to_ruby.c
+compiling psych_yaml_tree.c
+linking shared-object psych.so
+
+current directory: C:/metasploit-framework/embedded/lib/ruby/gems/3.4.0/gems/psych-5.3.1/ext/psych
+make -j4 DESTDIR\= sitearchdir\=./.gem.20260729-3492-g0l9go sitelibdir\=./.gem.20260729-3492-g0l9go install
+/usr/bin/install -c -m 0755 psych.so ./.gem.20260729-3492-g0l9go
+
+current directory: C:/metasploit-framework/embedded/lib/ruby/gems/3.4.0/gems/psych-5.3.1/ext/psych
+make -j4 DESTDIR\= sitearchdir\=./.gem.20260729-3492-g0l9go sitelibdir\=./.gem.20260729-3492-g0l9go clean
+cd libyaml && make -j4 clean
+/bin/sh: line 1: cd: libyaml: No such file or directory
+make: [Makefile:291: clean-so] Error 1 (ignored)

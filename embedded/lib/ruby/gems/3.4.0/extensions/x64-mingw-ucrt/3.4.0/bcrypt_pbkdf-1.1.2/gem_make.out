@@ -1,0 +1,23 @@
+current directory: C:/metasploit-framework/embedded/lib/ruby/gems/3.4.0/gems/bcrypt_pbkdf-1.1.2/ext/mri
+C:/metasploit-framework/embedded/bin/ruby.exe extconf.rb
+creating Makefile
+
+current directory: C:/metasploit-framework/embedded/lib/ruby/gems/3.4.0/gems/bcrypt_pbkdf-1.1.2/ext/mri
+make -j4 DESTDIR\= sitearchdir\=./.gem.20260729-3492-8rxijm sitelibdir\=./.gem.20260729-3492-8rxijm clean
+
+current directory: C:/metasploit-framework/embedded/lib/ruby/gems/3.4.0/gems/bcrypt_pbkdf-1.1.2/ext/mri
+make -j4 DESTDIR\= sitearchdir\=./.gem.20260729-3492-8rxijm sitelibdir\=./.gem.20260729-3492-8rxijm
+generating bcrypt_pbkdf_ext-x64-mingw-ucrt.def
+compiling bcrypt_pbkdf.c
+compiling bcrypt_pbkdf_ext.c
+compiling blowfish.c
+compiling explicit_bzero.c
+compiling hash_sha512.c
+linking shared-object bcrypt_pbkdf_ext.so
+
+current directory: C:/metasploit-framework/embedded/lib/ruby/gems/3.4.0/gems/bcrypt_pbkdf-1.1.2/ext/mri
+make -j4 DESTDIR\= sitearchdir\=./.gem.20260729-3492-8rxijm sitelibdir\=./.gem.20260729-3492-8rxijm install
+/usr/bin/install -c -m 0755 bcrypt_pbkdf_ext.so ./.gem.20260729-3492-8rxijm
+
+current directory: C:/metasploit-framework/embedded/lib/ruby/gems/3.4.0/gems/bcrypt_pbkdf-1.1.2/ext/mri
+make -j4 DESTDIR\= sitearchdir\=./.gem.20260729-3492-8rxijm sitelibdir\=./.gem.20260729-3492-8rxijm clean

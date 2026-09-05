@@ -1,0 +1,15 @@
+metasploit-framework 6.4.147-20260729060556-1rapid7
+
+Component                               Installed Version                Version GUID                                                              
+---------------------------------------------------------------------------------------------------------------------------------------------------
+bundler                                 2.6.7                            
+cacerts                                 2021-10-26                       sha256:ae31ecb3c6e9ff3154cb7a55f017090448f88482f0e94ac927c0c67a1f33b9cf   
+metasploit-framework                    master                           git:933d62c0c3fc0f0082a7cd8ac993603e07ec9b00                              
+metasploit-framework-wrappers-windows   1.0.0                            
+pcaprub                                 0.13.3                           
+postgresql-windows                      16.14                            sha256:f68c7fbd93029e60a4145ccb64337a32ddf02317a8194cb1f76e11557602642c   
+ruby-windows                            3.4.9-1                          sha256:4375268618b61dadf53bf8e54beaca74ea30580c90d3c47ea9f2a134bd3e494e   
+ruby-windows-devkit                     6.4.147-20260729060556-1rapid7   
+ruby-windows-msys2                      20250221                         sha256:cf7bd3ecb4f79eaa58ac794dba3cca15581465b9d92cec59ae4bd99fde74c8a0   
+rubygems                                3.6.7                            md5:4e8c5641f8dc7b6cac5a4bb8d423174f                                      
+winpcap-devpack                         4.1.2                            md5:bae2236af062b0900ad1416b2c4878b9                                      

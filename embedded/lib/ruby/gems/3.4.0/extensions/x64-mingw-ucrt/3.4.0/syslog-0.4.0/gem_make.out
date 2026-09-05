@@ -1,0 +1,14 @@
+current directory: C:/metasploit-framework/embedded/lib/ruby/gems/3.4.0/gems/syslog-0.4.0/ext/syslog
+C:/metasploit-framework/embedded/bin/ruby.exe extconf.rb
+
+current directory: C:/metasploit-framework/embedded/lib/ruby/gems/3.4.0/gems/syslog-0.4.0/ext/syslog
+make -j4 DESTDIR\= sitearchdir\=./.gem.20260729-3492-7opatk sitelibdir\=./.gem.20260729-3492-7opatk clean
+
+current directory: C:/metasploit-framework/embedded/lib/ruby/gems/3.4.0/gems/syslog-0.4.0/ext/syslog
+make -j4 DESTDIR\= sitearchdir\=./.gem.20260729-3492-7opatk sitelibdir\=./.gem.20260729-3492-7opatk
+
+current directory: C:/metasploit-framework/embedded/lib/ruby/gems/3.4.0/gems/syslog-0.4.0/ext/syslog
+make -j4 DESTDIR\= sitearchdir\=./.gem.20260729-3492-7opatk sitelibdir\=./.gem.20260729-3492-7opatk install
+
+current directory: C:/metasploit-framework/embedded/lib/ruby/gems/3.4.0/gems/syslog-0.4.0/ext/syslog
+make -j4 DESTDIR\= sitearchdir\=./.gem.20260729-3492-7opatk sitelibdir\=./.gem.20260729-3492-7opatk clean

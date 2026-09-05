@@ -1,0 +1,97 @@
+ruby-macho
+================
+
+[![Gem Version](https://badge.fury.io/rb/ruby-macho.svg)](http://badge.fury.io/rb/ruby-macho)
+[![CI](https://github.com/Homebrew/ruby-macho/actions/workflows/tests.yml/badge.svg)](https://github.com/Homebrew/ruby-macho/actions/workflows/tests.yml)
+[![Coverage Status](https://codecov.io/gh/Homebrew/ruby-macho/branch/main/graph/badge.svg)](https://codecov.io/gh/Homebrew/ruby-macho)
+
+A Ruby library for examining and modifying Mach-O files.
+
+### What is a Mach-O file?
+
+The [Mach-O file format](https://en.wikipedia.org/wiki/Mach-O) is used by macOS
+and iOS (among others) as a general purpose binary format for object files,
+executables, dynamic libraries, and so forth.
+
+### Installation
+
+ruby-macho can be installed via RubyGems:
+
+```bash
+$ gem install ruby-macho
+```
+
+### Documentation
+
+Full documentation is available on [RubyDoc](http://www.rubydoc.info/gems/ruby-macho/).
+
+A quick example of what ruby-macho can do:
+
+```ruby
+require 'macho'
+
+file = MachO::MachOFile.new("/path/to/my/binary")
+
+# get the file's type (object, dynamic lib, executable, etc)
+file.filetype # => :execute
+
+# get all load commands in the file and print their offsets:
+file.load_commands.each do |lc|
+  puts "#{lc.type}: offset #{lc.offset}, size: #{lc.cmdsize}"
+end
+
+# access a specific load command
+lc_vers = file[:LC_VERSION_MIN_MACOSX].first
+puts lc_vers.version_string # => "10.10.0"
+```
+
+### Ad-hoc code signing
+
+Changing a Mach-O load command invalidates any existing code signature. This is
+especially important when Homebrew pours bottles on Apple Silicon, where native
+code must remain signed after its paths are rewritten. `MachO.codesign!` creates
+the required ad-hoc signature in Ruby instead of invoking `/usr/bin/codesign`:
+
+```ruby
+MachO.codesign!("/path/to/my/binary")
+```
+
+
+### What works?
+
+* Reading data from x86/x86_64/arm64/PPC Mach-O files (other architectures are unsupported, but may work)
+* Changing the IDs of Mach-O and Fat dylibs
+* Changing install names in Mach-O and Fat files
+* Adding, deleting, and modifying rpaths.
+* Parsing embedded code signatures and applying ad-hoc signatures in pure Ruby.
+
+### What needs to be done?
+
+* Unit and performance testing.
+
+### Contributing, setting up `overcommit` and the linters
+
+In order to keep the repo, docs and data tidy, we use a tool called [`overcommit`](https://github.com/sds/overcommit)
+to connect up the git hooks to a set of quality checks.  The fastest way to get setup is to run the following to make
+sure you have all the tools:
+
+```shell
+gem install overcommit bundler
+bundle install
+overcommit --install
+```
+
+### Attribution
+
+* Constants were taken from Apple, Inc's
+[`loader.h` in `cctools/include/mach-o`](https://opensource.apple.com/source/cctools/cctools-973.0.1/include/mach-o/loader.h.auto.html).
+(Apple Public Source License 2.0).
+* Code-signing constants and structures follow Apple, Inc's
+[`cs_blobs.h` in XNU](https://github.com/apple-oss-distributions/xnu/blob/main/osfmk/kern/cs_blobs.h).
+* Binary files used for testing were taken from The LLVM Project. ([Apache License v2.0 with LLVM Exceptions](test/bin/llvm/LICENSE.txt)).
+
+### License
+
+`ruby-macho` is licensed under the MIT License.
+
+For the exact terms, see the [license](LICENSE) file.

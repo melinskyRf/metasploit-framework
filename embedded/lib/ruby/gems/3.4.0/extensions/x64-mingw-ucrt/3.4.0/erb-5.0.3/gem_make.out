@@ -1,0 +1,20 @@
+current directory: C:/metasploit-framework/embedded/lib/ruby/gems/3.4.0/gems/erb-5.0.3/ext/erb/escape
+C:/metasploit-framework/embedded/bin/ruby.exe extconf.rb
+checking for rb_ext_ractor_safe() in ruby.h... yes
+creating Makefile
+
+current directory: C:/metasploit-framework/embedded/lib/ruby/gems/3.4.0/gems/erb-5.0.3/ext/erb/escape
+make -j4 DESTDIR\= sitearchdir\=./.gem.20260729-3492-vaigh4 sitelibdir\=./.gem.20260729-3492-vaigh4 clean
+
+current directory: C:/metasploit-framework/embedded/lib/ruby/gems/3.4.0/gems/erb-5.0.3/ext/erb/escape
+make -j4 DESTDIR\= sitearchdir\=./.gem.20260729-3492-vaigh4 sitelibdir\=./.gem.20260729-3492-vaigh4
+generating escape-x64-mingw-ucrt.def
+compiling escape.c
+linking shared-object erb/escape.so
+
+current directory: C:/metasploit-framework/embedded/lib/ruby/gems/3.4.0/gems/erb-5.0.3/ext/erb/escape
+make -j4 DESTDIR\= sitearchdir\=./.gem.20260729-3492-vaigh4 sitelibdir\=./.gem.20260729-3492-vaigh4 install
+/usr/bin/install -c -m 0755 escape.so ./.gem.20260729-3492-vaigh4/erb
+
+current directory: C:/metasploit-framework/embedded/lib/ruby/gems/3.4.0/gems/erb-5.0.3/ext/erb/escape
+make -j4 DESTDIR\= sitearchdir\=./.gem.20260729-3492-vaigh4 sitelibdir\=./.gem.20260729-3492-vaigh4 clean

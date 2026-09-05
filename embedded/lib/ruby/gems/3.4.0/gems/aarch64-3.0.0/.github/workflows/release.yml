@@ -1,0 +1,62 @@
+name: Publish gem to rubygems.org
+
+on:
+  push:
+    tags:
+      - 'v*'
+
+permissions:
+  contents: read
+
+jobs:
+  push:
+    if: github.repository == 'tenderlove/aarch64'
+    runs-on: ubuntu-24.04-arm
+
+    environment:
+      name: rubygems.org
+      url: https://rubygems.org/gems/aarch64
+
+    permissions:
+      contents: write
+      id-token: write
+
+    strategy:
+      matrix:
+        ruby: ["ruby"]
+
+    steps:
+      - name: Harden Runner
+        uses: step-security/harden-runner@v2
+        with:
+          egress-policy: audit
+
+      - uses: actions/checkout@v4
+
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: ${{ matrix.ruby }}
+          apt-get: "haveged libyaml-dev cmake g++"
+
+      - name: Build capstone 5 from source
+        run: |
+          git clone --depth 1 --branch 5.0.7 https://github.com/capstone-engine/capstone.git /tmp/capstone
+          cd /tmp/capstone
+          cmake -B build -DCMAKE_INSTALL_PREFIX=/usr -DCAPSTONE_BUILD_TESTS=OFF -DCAPSTONE_BUILD_CSTOOL=OFF -DBUILD_SHARED_LIBS=ON
+          cmake --build build -j$(nproc)
+          sudo cmake --install build
+          sudo ldconfig
+
+      - name: Install dependencies
+        run: bundle install --jobs 4 --retry 3
+
+      - name: Publish to RubyGems
+        uses: rubygems/release-gem@v1
+
+      - name: Create GitHub release
+        run: |
+          tag_name="$(git describe --tags --abbrev=0)"
+          gh release create "${tag_name}" --verify-tag --generate-notes
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

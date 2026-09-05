@@ -1,0 +1,97 @@
+No installed jimsh or tclsh, building local bootstrap jimsh0
+Configuring SQLite version 3.53.2
+Host System...x86_64-w64-mingw32
+Build System...x86_64-pc-mingw64
+Source dir = C:/metasploit-framework/embedded/lib/ruby/gems/3.4.0/gems/sqlite3-2.9.5/ext/sqlite3/tmp/x86_64-w64-mingw32/ports/sqlite3/3.53.2/sqlite-autoconf-3530200
+Build dir  = C:/metasploit-framework/embedded/lib/ruby/gems/3.4.0/gems/sqlite3-2.9.5/ext/sqlite3/tmp/x86_64-w64-mingw32/ports/sqlite3/3.53.2/sqlite-autoconf-3530200
+C compiler... gcc -IC:/metasploit-framework/embedded/include -m64 -O3 -march=x86-64 -fPIC -O2 -fvisibility=hidden -DSQLITE_DEFAULT_WAL_SYNCHRONOUS=1 -DSQLITE_USE_URI=1 -DSQLITE_ENABLE_DBPAGE_VTAB=1 -DSQLITE_ENABLE_DBSTAT_VTAB=1 -IC:/metasploit-framework/embedded/include -m64 -O3 -march=x86-64
+C++ compiler... x86_64-w64-mingw32-c++ -IC:/metasploit-framework/embedded/include -m64 -O3 -march=x86-64 -IC:/metasploit-framework/embedded/include -m64 -O3 -march=x86-64
+Build C compiler...cc
+Checking for stdlib.h...ok
+Checking for sys/types.h...ok
+Checking if -D_FILE_OFFSET_BITS=64 is needed...yes
+SQLITE_DEBUG build? no
+Warning: Failed to find x86_64-w64-mingw32-ld, falling back to ld which may be incorrect
+Warning: Failed to find x86_64-w64-mingw32-ar, falling back to ar which may be incorrect
+Looking for install ... C:/metasploit-framework/embedded/msys64/usr/bin/install
+Checking for int8_t...ok
+Checking for int16_t...ok
+Checking for int32_t...ok
+Checking for int64_t...ok
+Checking for intptr_t...ok
+Checking for uint8_t...ok
+Checking for uint16_t...ok
+Checking for uint32_t...ok
+Checking for uint64_t...ok
+Checking for uintptr_t...ok
+Checking for gmtime_r...not found
+Checking for isnan...ok
+Checking for localtime_r...not found
+Checking for localtime_s...not found
+Checking for usleep...ok
+Checking for utime...ok
+Checking for pread...not found
+Checking for pread64...not found
+Checking for pwrite...not found
+Checking for pwrite64...not found
+Checking libs for fdatasync...no
+Checking libs for nanosleep...none needed
+Checking for sys/types.h...(cached) ok
+Checking for sys/stat.h...ok
+Checking for dlfcn.h...not found
+Checking for unistd.h...ok
+Checking for stdlib.h...ok
+Checking for malloc.h...ok
+Checking for memory.h...ok
+Checking for string.h...ok
+Checking for strings.h...ok
+Checking for inttypes.h...ok
+Checking for zlib.h...ok
+Checking libs for deflate...-lz
+Link library statically into the CLI shell? yes
+Statically link CLI shell? no
+Checking whether the C compiler accepts -rpath C:/metasploit-framework/embedded/lib/ruby/gems/3.4.0/gems/sqlite3-2.9.5/ports/x86_64-w64-mingw32/sqlite3/3.53.2/lib...no
+Checking whether the C compiler accepts -Wl,-rpath,C:/metasploit-framework/embedded/lib/ruby/gems/3.4.0/gems/sqlite3-2.9.5/ports/x86_64-w64-mingw32/sqlite3/3.53.2/lib...yes
+Support threadsafe operation? Checking for libs...
+Checking libs for pthread_create...none needed
+Checking libs for pthread_mutexattr_init...none needed
+Loadable extension support enabled. Using LoadLibrary()
+Checking libs for ceil...none needed
+Enabling math SQL functions
+ICU support is disabled.
+Checking for line-editing capability...
+WARNING: [ sqlite-check-line-editing ]: Skipping check for readline.h because we're cross-compiling.
+Line-editing support for the sqlite3 shell: none
+Build shared library? no
+Build static library? yes
+
+    NOTICE: auto-enabling --out-implib for environment [x86_64-w64-mingw32].
+    Use --out-implib=none to disable this special case
+    or --out-implib=auto to squelch this notice.
+
+
+    NOTICE: auto-enabling --dll-basename for environment [x86_64-w64-mingw32].
+    Use --dll-basename=default to disable this special case
+    or --dll-basename=auto to squelch this notice.
+
+Checking whether the C compiler accepts -Wl,--out-implib,libsqlite3.dll.a...yes
+Feature flags...
+  - fts3
+  - fts4
+  + fts5
+  - geopoly
+  - rtree
+  - session
+  - update-limit
+  - memsys5
+  - memsys3
+  - scanstatus
+  - dbpage
+  - dbstat
+  - carray
+  + json
+Library feature flags: -DSQLITE_ENABLE_DBPAGE_VTAB=1 -DSQLITE_ENABLE_DBSTAT_VTAB=1 -DSQLITE_ENABLE_FTS5 -DSQLITE_ENABLE_MATH_FUNCTIONS -DSQLITE_ENABLE_PERCENTILE -DSQLITE_HAVE_ZLIB=1 -DSQLITE_THREADSAFE=1
+Shell options: -DSQLITE_DQS=0 -DSQLITE_ENABLE_BYTECODE_VTAB -DSQLITE_ENABLE_DBPAGE_VTAB -DSQLITE_ENABLE_DBSTAT_VTAB -DSQLITE_ENABLE_EXPLAIN_COMMENTS -DSQLITE_ENABLE_FTS4 -DSQLITE_ENABLE_OFFSET_SQL_FUNC -DSQLITE_ENABLE_PERCENTILE -DSQLITE_ENABLE_RTREE -DSQLITE_ENABLE_STMTVTAB -DSQLITE_ENABLE_UNKNOWN_SQL_FUNCTION -DSQLITE_HAVE_ZLIB=1 -DSQLITE_STRICT_SUBTYPE=1
+Created Makefile from Makefile.in
+Created sqlite3.pc from sqlite3.pc.in
+Created sqlite_cfg.h
